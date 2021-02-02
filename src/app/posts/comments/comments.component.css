@@ -1,0 +1,35 @@
+.general_content_comments{
+
+    border: 1px solid;
+}
+
+.header_comments{
+
+    background-color: #00af91;
+    border-bottom: 1px solid;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    
+}
+
+.content_comments{
+    background-color: #f6f6f6;
+    padding: 10px;
+    
+}
+
+.comment_block{
+
+    margin-bottom: 20px;
+}
+
+.comment_block:last-child{
+
+    margin-bottom: 0px;
+}
+
+.comment_block_name{
+
+    margin-bottom: 5px;
+}

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "leangasoftware-angular"
+    }
+  },
+  "defaultProject": "leangasoftware-angular",
+  "cli": {
+    "analytics": false
+  }
 }

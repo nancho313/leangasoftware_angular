@@ -1,0 +1,18 @@
+<style>
+    h2 {font-size: 30px;
+        color: #007965;
+
+    }
+</style>
+<div *ngIf="existsPost()">
+    <div>
+        <h2 class="header_info" >Detail Post: {{post.id}}</h2>
+        <h3 *ngIf="existsLastCommentDate()" class="header_info">Last Comment Date: {{getLastCommentDate()}}</h3>
+    </div>    
+    <h1>{{post.title}}</h1>
+    <p>{{post.body}}</p>
+    <app-comments [postId]="post.id" (showLastCommentDate)="changeLastCommentDate($event)"></app-comments>
+</div>
+<div *ngIf="!existsPost()">
+    There is no post to show.
+</div>
