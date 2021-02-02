@@ -1,0 +1,18 @@
+<div class="general_content_comments">
+    <div class="header_comments" align="center">Comments</div>
+    <div *ngIf="areThereComments()" class="content_comments">
+        <div *ngFor="let comment of comments" class="comment_block">
+            <div class="comment_block_name">
+                <b>User:</b> {{comment.name}} - {{comment.email}}
+            </div>
+            <div class="comment_block_body">
+                <b>Comment:</b> {{comment.body}}
+            </div>
+        </div>
+
+        <button (click)="showNewLastCommentDate()">Show Last Comment Date</button>
+    </div>
+    <div *ngIf="!areThereComments()">
+        The post have not comments to show.
+    </div>
+</div>

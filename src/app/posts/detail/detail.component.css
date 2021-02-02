@@ -1,0 +1,9 @@
+.header_info{
+
+    display: inline-block; vertical-align:top;
+}
+
+.header_info:nth-child(2){
+
+    float: right;
+}

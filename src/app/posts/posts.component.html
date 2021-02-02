@@ -1,0 +1,24 @@
+<div class="general_content_posts">
+    <h1><u>List Post</u></h1>
+
+    <div *ngIf="!areTherePosts()">
+        No posts to show.
+    </div>
+
+    <table *ngIf="areTherePosts()" class="styled-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Post</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of posts">
+                <td>{{post.id}}</td>
+                <td>{{post.title}}</td>
+                <td><a [routerLink]="getDetailPath(post)">Show</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
