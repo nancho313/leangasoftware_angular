@@ -1,6 +1,7 @@
 .header_info{
 
     display: inline-block; vertical-align:top;
+    color: #007965;
 }
 
 .header_info:nth-child(2){
